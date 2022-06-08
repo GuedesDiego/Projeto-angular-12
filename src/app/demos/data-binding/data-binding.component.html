@@ -8,17 +8,17 @@
 <h3>Property Binding</h3>
 <button class="btn btn-warning" > Like </button>
 <button class="btn btn-danger" > Deslike </button><br>
-<img [src]="" alt="malelo">
+<img width="300px" height="300px" src="../../../assets/malelo.jpg" alt="malelo">
 
 <h3>Event Binding</h3>
-<button class="btn btn-warning" (click)='adicionarClique()'> Só Clicar</button>
+<button class="btn btn-warning"(click)='adicionarClique()'>Só Clicar</button>
 
 <br><br><br>
 
 <h3> Two-way binding</h3>
 
-<input type="text" [(ngModel)]= "nome" placeholder="digite aqui"><br><br>
-<label [ngClass]= "nome" > Seu nome é: {{ nome }} </label>
+<input type="text" [(ngModel)]="nome" placeholder="digite aqui"><br><br>
+<label [ngClass]="nome">Seu nome é: {{ nome }}</label>
 
 </div>
 
